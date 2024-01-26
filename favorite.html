@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Портал пошуку книжок</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<div class="menu">
+		<div class="container">
+			<a href="index.html" class="menu__logo-link">
+				<img src="img/logo.png" alt="" class="logo">
+			</a>
+			<a href="favorite.html" class="menu__saved">
+				<span class="saved-num">0</span>
+				<svg class='icon icon-heart'><use xlink:href='#icon-heart'></use></svg>
+			</a>
+			<ul class="menu__links">
+				<li class="menu_li">
+					<a href="franchise.html" class="menu_link">Франшиза</a>
+				</li>
+				<li class="menu_li">
+					<a href="delivery-and-payment.html" class="menu_link">Доставка та оплата</a>
+				</li>
+				<li class="menu_li">
+					<a href="points-program.html" class="menu_link">Програма балів</a>
+				</li>
+				<li class="menu_li">
+					<a href="#contacts" class="menu_link">Контакти</a>
+				</li>
+			</ul>
+		</div>        
+	</div>
+	
+
+	<div class="catalog" id="catalog">
+		<div class="container">
+			<div class="catalog__cards" id="book-saved-list">
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="info-block">
+		<div class="container container-lg">
+			<div class="info-block__hold">
+				<div class="info-block__text-hold">
+					<p class="info-block__title-top">Безкоштовна книга !!!</p>
+					<h2 class="info-block__title">Знайди свою Ідеальну Книгу Тут</h2>
+					<p class="info-block__title-bottom">Кожного місяця ми даємо одну книгу з нашого каталогу на скачування, щоб вас зацікавити.</p>
+					<a href="free-book.pdf" download="" class="info-block__btn btn-more">Скачати книгу</a>
+				</div>
+				<div class="info-block__img-hold">
+					<img src="img/pic-1.png" alt="" class="info-block__img" width="368" height="466">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer" id="contacts">
+		<div class="footer__wrapper">
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__top-hold">
+						<div class="footer__top-box footer__category">
+							<h3 class="footer__category-title">Про магазин</h3>
+							<ul class="footer__category-list">
+								<li class="footer__category-item"><a href="index.html#catalog" class="footer__category-link footer__link">Каталог</a></li>
+								<li class="footer__category-item"><a href="delivery-and-payment.html" class="footer__category-link footer__link">Доставка та оплата</a></li>
+								<li class="footer__category-item"><a href="franchise.html" class="footer__category-link footer__link">Франшиза</a></li>
+								<li class="footer__category-item"><a href="points-program.html" class="footer__category-link footer__link">Програма балів</a></li>
+								<li class="footer__category-item"><a href="https://twitter.com/" target="_blank" class="footer__category-link footer__link">Відгуки клієнтів</a></li>
+							</ul>
+						</div>
+						<div class="footer__top-box footer__order">
+							<h3 class="footer__order-title">Зробити замовлення</h3>
+							<div class="footer__order-content">
+								<a href="tel:+380930000000" class="footer__order-main-tel footer__link">+38 (093) 00 00 000</a>
+								<p class="footer__order-work-hours">Пн-Нд:  10.00 – 17.00</p>
+								<p class="footer__order-work-status">м. Львів, проспект Т. Шевченка, 8 (Магазин зараз працює)</p>
+							</div>
+						</div>
+						<div class="footer__top-box footer__contacts">
+							<h3 class="footer__contacts-title">Слідкуй за нами</h3>
+							<div class="footer__contacts-content">
+								<a href="https://twitter.com/" target="_blank" class="footer__contact-big-link footer__link">#Twitter-it</a>
+								<p class="footer__contact-text">Відгуки наших клієнтів за цим хештегом у твіттері</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__bottom-hold">
+						<div class="footer__bottom-box footer__bottom-left">
+							<p class="footer__bottom-copyright footer__text-el">© 2023 Company, Inc</p>
+						</div>
+						<div class="footer__bottom-box footer__bottom-right">
+							<nav class="footer__bottom-box-links">
+								<a href="terms.html" class="footer__bottom-box-link footer__text-el">Privacy policy</a>
+								<a href="terms.html" class="footer__bottom-box-link footer__text-el">Terms of use</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<svg xmlns="http://www.w3.org/2000/svg" hidden>
+		<symbol id="icon-pages" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></symbol>
+		<symbol id="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></symbol>
+		<symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></symbol>
+		<symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></symbol>
+	</svg>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>

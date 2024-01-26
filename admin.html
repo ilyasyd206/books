@@ -1,0 +1,91 @@
+<style>
+.admin-holder {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+form {
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+br {
+    clear: both;
+}
+
+</style>
+<div class="admin-holder">
+    <form action="https://6514585f8e505cebc2eb27cf.mockapi.io/catalog" method="POST">
+        <input type="text" name="title" placeholder="Назва книги"><br><br>
+        <input type="text" name="img" placeholder="Назва картинки" value="img-1.jpg"><br><br>
+        <input type="text" name="price" placeholder="Ціна"><br><br>
+        
+        <select name="category">
+            <option value="1">Дитячі казки</option>
+            <option value="2">Фантастика</option>
+            <option value="3">Романи</option>
+            <option value="4">Детективи</option>
+            <option value="5">Сучасна проза</option>
+            <option value="6">Історичні</option>
+            <option value="7">Любовні романи</option>
+            <option value="8">Філософія</option>
+            <option value="9">Програмування</option>
+        </select><br><br>
+    
+        <button>Добавити книгу</button>
+    </form>
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <form action="https://6514585f8e505cebc2eb27cf.mockapi.io/categories" method="POST">
+        <input type="text" name="title" placeholder="Назва категорії"><br><br>
+        <p>Чи виводити в блоці "Популярні теми"</p>
+        <label><input type="radio" name="hotoffer" value="yes"> Так</label>
+        <label><input type="radio" name="hotoffer" value="no" checked> Ні</label>
+        <br><br>
+        <button>Добавити категорію</button>
+    </form>
+</div>
+
